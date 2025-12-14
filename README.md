@@ -17,7 +17,7 @@ This Terraform configuration deploys a basic AWS infrastructure with VPC, subnet
 
 - Terraform >= 1.0
 - AWS CLI configured with credentials
-- SSH public key file (`personalkey.ppk`)
+- SSH public key file (`personalkuy.pub`)
 
 ## Usage
 
@@ -38,4 +38,3 @@ Define these in `terraform.tfvars`:
 ## Outputs
 
 Configure outputs in `outputs.tf` to display instance public IP and other relevant resources.
-
