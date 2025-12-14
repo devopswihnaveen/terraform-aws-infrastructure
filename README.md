@@ -37,4 +37,21 @@ Define these in `terraform.tfvars`:
 
 ## Outputs
 
-Configure outputs in `outputs.tf` to display instance public IP and other relevant resources.
+```hcl
+# outputs.tf
+
+output "instance_public_ip" {
+    value       = aws_instance.my_instance.public_ip
+    description = "The public IP address of the EC2 instance"
+}
+
+output "vpc_id" {
+    value       = aws_vpc.main.id
+    description = "The ID of the VPC"
+}
+
+output "subnet_id" {
+    value       = aws_subnet.public.id
+    description = "The ID of the public subnet"
+}
+```
